@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: Helvetica, sans-serif;
+}
+body{
+  cursor: pointer;
+}
+
+html, body {
+    height: 100%;
+}
+
+h1{
+  font-size: 8em;
+}
+
+div{
+  margin: .5em;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+
+
+#cursor{
+  cursor: default;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+#bg1{
+  background-color: #fed9b7;
+}
+.backButton{
+  background-color: inherit;
+  border-width: 0px;
+}
+.backButton:hover{
+  opacity: 80%;
+}
+
+.darkpink{
+  color: #f07167;
+}
