@@ -100,6 +100,7 @@ button > h2{
   grid-template-rows: 1fr 1fr 1fr;
   width: 100%;
   height: 100%;
+  grid-gap: 5rem;
 }
 
 .altItem2{
@@ -188,7 +189,7 @@ button > h2{
 #navbar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #333;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -196,7 +197,7 @@ button > h2{
 }
 
 #navbar a:hover {
-  background-color: #ddd;
+  background-color: #333;
   color: black;
 }
 
