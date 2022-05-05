@@ -24,6 +24,8 @@ var typewriter = new Typewriter(app,{
 });
 
 typewriter.typeString('Overwhelmed?')
+  .pauseFor(1500)
+  .deleteChars(12)
   .typeString('Not use to this kind of UX/UI right?')
   .pauseFor(2500)
   .deleteChars(36)
