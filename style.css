@@ -2,10 +2,10 @@
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-  font-family: Helvetica, sans-serif;
 }
 body{
   cursor: pointer;
+  font-family: Helvetica, sans-serif;
 }
 
 html, body {
@@ -38,18 +38,24 @@ button > h2{
   color: #fed9b7;
 }
 
+.codestyle1{
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Source Code Pro', monospace;
+  font-size:3rem;
+}
+
 .codestyle {
   font-family: 'Inconsolata', monospace;
   font-family: 'Source Code Pro', monospace;
   color: #ffff;
-  font-size:5em;
+  font-size:5rem;
 }
 
 #cursor{
   cursor: default;
 }
 
-#rcorner {
+.rcorner {
   border-radius: 2em;
   background: #f07167;
   padding: 2em;
@@ -81,9 +87,16 @@ button > h2{
   height: 80vh;
 }
 
+.container2{
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
 .infotext{
   border: .5em solid white;
-  padding: 1em;
+  padding: 2rem;
   width: 100%;
   height: inherit;
 }
@@ -91,7 +104,7 @@ button > h2{
   width: 100%;
   height: 100%;
   text-align: center;
-  padding: 15rem;
+  padding: 5rem;
   margin: 1rem;
 }
 .alt{
@@ -103,6 +116,11 @@ button > h2{
   grid-gap: 5rem;
 }
 
+.altItem1{
+  grid-column: 1/ span 1;
+  grid-row: 1 / span 1;;
+}
+
 .altItem2{
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;;
@@ -111,6 +129,17 @@ button > h2{
 .altItem3{
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;;
+
+}
+
+.altItem4{
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 1;;
+}
+
+.altItem3{
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;;
 
 }
 
@@ -138,12 +167,31 @@ button > h2{
   background-color: #fed9b7;
 }
 .backButton{
-  background-color: inherit;
+  background-color: #fed9b7;
   border-width: 0px;
 }
 .backButton:hover{
   opacity: 80%;
 }
+
+.button1{
+  background-color: #f07167;
+  border-width: 0px;
+  }
+  .button1:hover{
+  opacity: 80%;
+}
+
+
+#next-button{
+    background-color: #inherit;
+    border-width: 0px;
+
+  }
+#next-button:hover{
+    opacity: 80%;
+  }
+
 
 .darkpink{
   color: #f07167;

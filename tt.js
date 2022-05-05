@@ -1,13 +1,31 @@
-var app = document.getElementById('app');
+let executeButton = document.getElementById("next-button");
+document.getElementById("next-button").style.display = "none";
+
+function showStuff() {
+    document.getElementById("next-button").style.display = "inline";
+}
+// setTimeout(showStuff, 50000);
+
+executeButton.addEventListener("click", function(){
+  nextpage();
+    });
+
+
+function nextpage(){
+  window.location='edu.html';
+}
 
 
 var typewriter = new Typewriter(app,{
-    loop: false
+    loop: false,
+    delay: 100,
+
 
 });
 
-typewriter.typeString('Not use to this kind of UX/UI right?')
-  .pauseFor(3000)
+typewriter.typeString('Overwhelmed?')
+  .typeString('Not use to this kind of UX/UI right?')
+  .pauseFor(2500)
   .deleteChars(36)
   .typeString('Want Your Normal Conventions Back?')
   .pauseFor(3000)
@@ -16,21 +34,8 @@ typewriter.typeString('Not use to this kind of UX/UI right?')
   .pauseFor(3000)
   .deleteChars(42)
   .typeString("recognize the digital divide")
-  .pauseFor(5000)
+  .callFunction(()=> {
+        console.log('button activate');
+        showStuff();
+      })
   .start();
-
-  let executeButton = document.getElementById("next-button");
-  document.getElementById("next-button").style.display = "none";
-
-  function showStuff() {
-      document.getElementById("next-button").style.display = "inline";
-  }
-  setTimeout(showStuff, 50000);
-
-  executeButton.addEventListener("click", function(){
-    nextpage();
-      });
-
-  function nextpage(){
-    window.location='edu.html';
-  }

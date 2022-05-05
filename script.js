@@ -59,7 +59,7 @@ var typewriter = new Typewriter(app,{
 
 });
 
-typewriter.typeString('Take Time To Understand The Digital Inequalities That Exacerbate:')
+typewriter.typeString('Take Time To Understand The Inequalities That Exacerbate:')
   .start();
 }
 
